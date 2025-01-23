@@ -27,6 +27,7 @@
      <!--Row es fila (horizontal)-->
      <!--Col es columna (vertical)-->
      
+     <main>
      <div class="container"> <!--establece nuestro contenedor-->
         <div class="row"> 
             <!--Cuando no hay especificación en el tamaño de columnas, se reparte el espacio de forma equitativa-->
@@ -59,6 +60,73 @@
             </div>
         </div>
      </div>
+    </main>
+
+    <!--12 columnas-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">1</div>
+                <div class="col">2</div>
+                <div class="col">3</div>
+                <div class="col">4</div>
+                <div class="col">5</div>
+                <div class="col">6</div>
+                <div class="col">7</div>
+                <div class="col">8</div>
+                <div class="col">9</div>
+                <div class="col">10</div>
+                <div class="col">11</div>
+                <div class="col">12</div>
+                <!--puedo poner más de 12 columnas y bootstrap lo permitirá, a menos que se especifique un tamaño, así se cuentan las 12 columnas y si se excede, dará un salto de línea para poner las columnas sobrantes en una nueva fila.-->
+                <div class="col">13</div>
+                <div class="col">14</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!--columnas con anchos diferentes-->
+        <div class="container">
+            <div class="row">
+                <div class="col-1 border" style="background-color: blueviolet;">A</div>
+                <div class="col-2 border" style="background-color: aquamarine;">B</div>
+                <div class="col-3 border" style="background-color: blanchedalmond;">C</div>
+                <div class="col-6 border" style="background-color: cadetblue;">D</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--columnas con breakpoints: para tamaños especificos. Recuerda ir de la pantalla más pequeña a la más grande-->
+    <section>
+        <!--columnas con anchos diferentes-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 border" style="background-color: blueviolet;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate ratione in, reiciendis minima soluta deserunt quam enim totam iusto? Voluptatum voluptas ab sequi velit deserunt atque hic possimus.</div>
+                <div class="col-12 col-md-6 col-lg-3 border" style="background-color: aquamarine;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta laborum tempore et, reprehenderit iusto similique minima cupiditate quas commodi, ad delectus molestiae fugit recusandae, fugiat possimus id consequuntur placeat ea.</div>
+                <div class="col-12 col-md-6 col-lg-3 border" style="background-color: blanchedalmond;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere animi ea, amet voluptas, aut commodi quibusdam cumque facilis illum, odio dolor? Quasi magnam consequatur voluptate laboriosam consequuntur obcaecati ipsa unde.</div>
+                <div class="col-12 col-md-6 col-lg-3 border" style="background-color: cadetblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus nulla natus, placeat neque exercitationem facere impedit a odio hic in consequatur et reprehenderit aspernatur similique minima laborum veniam repellendus.</div>
+            </div>
+        </div>
+    </section>
+
+    <!--columnas con breakpoints sin usar tantas clases-->
+    <section>
+        <div class="container">
+            <div class="row row-cols-1 row-cold-md-2 row-cols-lg-4">
+                <div class="col border">
+                    “¿De dónde llegan las fechas y a dónde van? Viajan un año entero y con la precisión de una saeta se clavan en el día señalado, nos muestran un pasado, un presente en el espacio, nos deslumbran y se apagan.” ― Elena Garro, Los recuerdos del porvenir
+                </div>
+                <div class="col border">1. “Aquel que quiere permanentemente llegar más alto tiene que contar con que algún día le invadirá el vértigo”.</div>
+                <div class="col border">jejejjeje</div>
+                <div class="col border">aaaaaaaaaa</div>
+                <div class="col border">aaaaaaaaaa</div>
+            </div>
+        </div>
+
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
